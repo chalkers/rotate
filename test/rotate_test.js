@@ -38,5 +38,9 @@ describe("rotate", function(){
         assert.equal(rotate(value), 0b10000000);
     });
 
+    it("should rotate 0b00000000", function(){
+        var value = 0b00000000;
+        assert.equal(rotate(value), 0b00000000);
+    });
 
 });
